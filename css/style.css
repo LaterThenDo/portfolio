@@ -1,0 +1,656 @@
+@font-face {
+    font-family: 'Conduit';
+    src: url(../fonts/Conduit-ITC-Std-Font.otf);
+}
+
+*{
+    font-family: 'Conduit', sans-serif;
+    margin: 0;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+/*==================[ HEADER ]==================*/
+
+header {
+    position: fixed;
+    top: 0;
+    display: block;
+    align-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+}
+
+summary {
+    width: 75px;
+    height: 75px;
+    float: right;
+    margin-top: 12px;
+    text-align: right;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.menu {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* match header height */
+    width: 100%;
+}
+
+.menu a {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.desktop-menu{
+    display: none;
+    float: right;
+    margin-right: 3%;
+    gap: 50px;
+}
+
+.desktop-menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.desktop-menu a:hover{
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    color:blue;
+}
+
+/*==================[ MAIN ]==================*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*==================[ FOOTER ]==================*/
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+footer .promotions{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    overflow:visible;
+}
+
+footer .credit{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    font-size: 15px;
+}
+
+footer .location{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+/*==================[ MISC ]==================*/
+.page-label{
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    color:white;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 3fr 2fr;
+    text-align: center;
+    place-items: center;
+    flex: 100%;
+}
+
+.banners {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2%;
+    margin: 2%;
+}
+
+.banners img{
+    width: 100%;
+}
+
+.banners .layout{
+    flex: 1;
+}
+
+.pages {
+    line-height: 1.75;  
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2{
+    font-size: 38px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h6{
+    align-content: center;
+    display: block;
+    background: none;
+    border: 5px solid white;
+    font-size: 35px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+}
+
+p {
+    font-size: 18px;    
+}
+
+
+/*==================[ INDEX ]==================*/
+#intro{
+    background-image: url("../images/index-bg-image.jpg");
+    grid-template-rows: 5fr 1fr 1fr 5fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#intro #name{
+    font-size: 40px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#intro #desc{
+    font-size: 20px;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#personal-introduction{
+    margin-top: 100px;
+    line-height: 1.75;
+}
+
+#personal-introduction h1{
+    text-align: center;
+    font-size: 38px;
+}
+
+#personal-introduction img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#personal-introduction p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/*==================[ ABOUT ME ]==================*/
+#aboutme-label{
+    background-image: url("../images/about-me-pic.jpg");
+}
+
+#profilepic{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#profilepic img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*==================[ HOBBIES ]==================*/
+#hobbies-label{
+    background-image: url("../images/hobbies_pic.jpg");
+}
+
+#hobbies{
+    margin-top: 20px;
+}
+
+#hobbies section {
+    margin-top: 20px;
+}
+
+#hobbies section p{
+    margin-bottom: 20px;
+}
+
+#hobbies iframe{
+    width: 100%;
+}
+
+#hobbies img{
+    width: 100%;
+}
+
+/*==================[ EDUCATION ]==================*/
+#education-label{
+    background-position: top left;
+    background-image: url("../images/education_pic.jpg");
+}
+
+#education{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 10fr;
+    height: 100%;
+}
+
+#education .desktop{
+    display: none;
+}
+
+#education .mobile{
+    display:contents;
+}
+
+#education #timeline{
+    position: relative;
+    margin: 0 auto;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+.dot{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0 -8px;
+    background-color: lightblue;
+    border-radius: 50%;     
+}
+
+.dot1{
+    top: 3%;
+}
+
+.dot2{
+    top: 35.5%;
+}
+
+.dot3{
+    top: 68%;
+}
+
+#education .pri-sch{
+    grid-row: 1 / 2;
+}
+
+#education .sec-sch{
+    grid-row: 2 / 3;
+}
+
+#education .polytechnic{
+    grid-row: 3 / 4;
+}
+
+#education section{
+    padding-top: 10%;
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#education .cca{
+    padding-top: 20px;
+}
+
+#education .achievements{
+    padding-top: 20px;
+}
+
+#education section h3{
+    font-size: 20px;
+}
+
+#education section h5{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#education section img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto auto;
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    width: 65%;
+}
+
+#education ul{
+    font-size: 20px;
+}
+
+#education ol{
+    font-size: 20px;
+}
+
+
+
+/*==================[ TABLET ]==================*/
+@media (min-width: 768px){
+    .pages {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .mobile-menu{
+        display:none;
+    }
+
+    header{
+        height: 65px;
+    }
+
+    .desktop-menu{
+        display:flex;
+    }
+
+    h6{
+        font-size: 70px;
+    }
+
+    /*==================[ TABLET INDEX ]==================*/
+    #intro #name{
+        font-size: 45px;
+    }
+
+    #intro #desc{
+        font-size: 25px;
+    }
+
+    #personal-introduction{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*==================[ TABLET EDUCATION ]==================*/
+    .dot1{
+        top: 3%;
+    }
+
+    .dot2{
+        top: 36%;
+    }
+
+    .dot3{
+        top: 68.75%;
+    }
+}
+
+
+
+/*==================[ DESKTOP ]==================*/
+@media (min-width: 1280px) {
+    .banners{
+        width: 1300px;
+        gap: 10%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .pages {
+        min-width: 700px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    footer {
+        height: 150px;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 3fr 3fr 2fr 2fr;
+    }
+
+    footer .promotions{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    footer .credit{
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        font-size: 15px;
+    }
+
+    footer .location{
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+
+    h6{
+        font-size: 100px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+
+    /*==================[ DESKTOP INDEX ]==================*/
+    #intro #name{
+        font-size: 50px;
+    }
+
+    #intro #desc{
+        font-size: 30px;
+    }
+
+    #personal-introduction{
+        display: grid;
+        margin-top: 50px;
+        margin-left: 25%;
+        margin-right: 25%;
+        grid-template-rows: 1fr 5fr;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #personal-introduction h1{
+        padding-top: 10%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    #personal-introduction img{
+        width: 140%;
+        grid-row: 1 / 4;
+        grid-column: 2 / 3;
+    }
+
+    #personal-introduction p{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        padding-right: 30px;
+    }
+
+
+    /*==================[ DESKTOP ABOUT ME ]==================*/
+    #profilepic img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #core-values{
+        display:flex;
+        gap: 30px;
+    }
+
+    .core-value{
+        flex: 1;
+        max-width: 33%;
+        min-width: 250px;
+    }
+
+    #about-me p{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #future-goals{
+        margin-bottom: 70px;
+    }
+
+    /*==================[ DESKTOP HOBBIES ]==================*/
+
+    #hobbies section{
+        margin-top: 3%;
+        height: 500px;
+    }
+
+    #hobbies .left{
+        display: grid;
+        grid-template-rows: 1fr 7fr;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #hobbies .left h3{
+        padding-right: 30px;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    #hobbies .left p{
+        padding-right: 30px;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    #hobbies .left img{
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+    }
+
+    #hobbies .right{
+        display: grid;
+        grid-template-rows: 1fr 7fr;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #hobbies .right h3{
+        padding-left: 30px;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+
+    #hobbies .right p{
+        padding-left: 30px;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    #hobbies .right img{
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+
+    #hobbies #featured{
+        height: 700px;
+        margin-bottom: 15%;
+    }
+
+    #hobbies iframe{
+        height: 100%;
+    }
+
+    
+    /*==================[ DESKTOP EDUCATION ]==================*/
+    #education{
+        padding-top: 3%;
+    }
+
+    #education .mobile{
+        display: none;
+    }
+
+    #education .desktop{
+        display:contents;
+    }
+
+    .dot1{
+        top: 7.5%;
+    }
+
+    .dot2{
+        top: 40%;
+    }
+
+    .dot3{
+        top: 72.5%;
+    }
+
+    #education section h3{
+        font-size: 25px;
+    }
+
+    #education section h5{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
+    #education td{
+        vertical-align: top;
+    }
+
+    #education ul{
+        font-size: 25px;
+        margin-right: 40px;
+    }
+
+    #education ol{
+        font-size: 25px;
+        margin-right: 40px;
+    }
+}
