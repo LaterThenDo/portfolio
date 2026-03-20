@@ -176,7 +176,7 @@ p {
 
 /*==================[ INDEX ]==================*/
 #intro{
-    background-image: url("../images/index-bg-image.jpg");
+    background-image: url("../images/index-bg-image.png");
     grid-template-rows: 5fr 1fr 1fr 5fr;
     grid-template-columns: 1fr 3fr 1fr;
 }
@@ -219,7 +219,7 @@ p {
 
 /*==================[ ABOUT ME ]==================*/
 #aboutme-label{
-    background-image: url("../images/about-me-pic.jpg");
+    background-image: url("../images/about-me-pic.png");
 }
 
 #profilepic{
@@ -242,7 +242,7 @@ p {
 
 /*==================[ HOBBIES ]==================*/
 #hobbies-label{
-    background-image: url("../images/hobbies_pic.jpg");
+    background-image: url("../images/hobbies_pic.png");
 }
 
 #hobbies{
@@ -268,7 +268,7 @@ p {
 /*==================[ EDUCATION ]==================*/
 #education-label{
     background-position: top left;
-    background-image: url("../images/education_pic.jpg");
+    background-image: url("../images/education_pic.png");
 }
 
 #education{
