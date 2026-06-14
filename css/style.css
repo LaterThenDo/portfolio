@@ -1,0 +1,861 @@
+@font-face {
+    font-family: 'Conduit';
+    src: url(../fonts/Conduit-ITC-Std-Font.woff2);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+*{
+    margin: 0;
+}
+
+body, html {
+    font-family: 'Conduit', sans-serif;
+    overflow-x: hidden;
+}
+
+/*==================[ HEADER ]==================*/
+
+header {
+    position: fixed;
+    top: 0;
+    display: block;
+    align-content: center;
+    background: none;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+}
+
+summary {
+    width: 75px;
+    height: 75px;
+    float: right;
+    margin-top: 12px;
+    text-align: right;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-soft);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* match header height */
+    width: 100%;
+}
+
+.menu a {
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.desktop-menu{
+    display: none;
+    float: right;
+    margin-right: 3%;
+    gap: 50px;
+}
+
+.desktop-menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-menu a:hover{
+    text-decoration:underline;
+    text-underline-offset: 10px;
+    color:blue;
+}
+
+/*==================[ MAIN ]==================*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*==================[ FOOTER ]==================*/
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+footer .promotions{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    overflow:visible;
+}
+
+footer .promotions a {
+    color: white;          /* choose any color */
+    text-decoration: none; /* removes underline */
+    font-size: larger;
+    font-weight: bolder;
+}
+
+footer .credit{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    font-size: 15px;
+}
+
+footer .location{
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+/*==================[ MISC ]==================*/
+.page-label{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    color:white;
+
+    text-align: center;
+    place-items: center;
+    flex: 100%;
+}
+
+.banners {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 2%;
+    margin: 2%;
+}
+
+.banners img{
+    width: 100%;
+}
+
+.banners .layout{
+    flex: 1;
+}
+
+.contact-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 399 / 923;
+    background-color: #000;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.pages {
+    line-height: 1.75;  
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+h2{
+    font-size: 38px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h6{
+    align-content: center;
+    background: none;
+    font-size: 50px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 20px black;
+}
+
+p {
+    font-size: 18px;    
+}
+
+
+/*==================[ INDEX ]==================*/
+#intro{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/index-bg-image.png");
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr 5fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-shadow: 0 0 20px black;
+}
+
+#intro #name{
+    font-size: 40px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+#intro #desc{
+    font-size: 20px;
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+#personal-introduction{
+    margin-top: 100px;
+    line-height: 1.75;
+}
+
+#personal-introduction h1{
+    text-align: center;
+    font-size: 38px;
+}
+
+#personal-introduction img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#personal-introduction p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#grad-pic img{
+    width: 100%;
+}
+
+/*==================[ ABOUT ME ]==================*/
+#aboutme-label{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/about-me-pic.png");
+}
+
+#profilepic{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#profilepic img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-me p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*==================[ ABOUT ME EXTRAS: EDUCATION, HOBBIES, CONTACT ]==================*/
+#about-me h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Education timeline */
+#education-timeline{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.edu-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: #fff;
+}
+
+.edu-card img{
+    width: 100%;
+    display: block;
+}
+
+.edu-content{
+    padding: 20px;
+}
+
+.edu-content h3{
+    margin-bottom: 10px;
+}
+
+.edu-years{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+.edu-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.edu-details > div{
+    flex: 1;
+    min-width: 140px;
+}
+
+.edu-details h5{
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+
+.edu-details ul{
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+/* Hobbies grid */
+#hobbies-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hobby-card{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: #fff;
+    padding-bottom: 16px;
+}
+
+.hobby-card img{
+    width: 100%;
+    display: block;
+}
+
+.hobby-card h3{
+    margin: 14px 16px 8px;
+}
+
+.hobby-card p{
+    margin: 0 16px;
+}
+
+#featured{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#featured h3{
+    margin-bottom: 10px;
+}
+
+#featured p{
+    margin-bottom: 15px;
+}
+
+/*==================[ CONTACT ]==================*/
+#contact-label{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/contact-pic.jpg");
+}
+
+#contact h1{
+    margin-bottom: 15px;
+    margin-top: 3%;
+}
+
+#contact > div > p{
+    margin-bottom: 30px;
+}
+
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-card{
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--shadow-soft);
+    background: #fff;
+    text-align: center;
+}
+
+.contact-card h3{
+    margin-bottom: 8px;
+}
+
+.contact-card a{
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contact-form{
+    margin-bottom: 50px;
+}
+
+#contact-form h2{
+    margin-bottom: 15px;
+}
+
+#contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea{
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+#contact-form button{
+    font-family: 'Conduit', sans-serif;
+    align-self: flex-start;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#contact-form button:hover{
+    background-color: #1a4fc4;
+}
+
+
+/*==================[ WORKS ]==================*/
+#works-label{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/works-pic.png");
+}
+
+#works{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#work-categories
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 2%;
+    margin: 2%;
+    margin-top: 30px;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+#work-categories .layout
+{
+    display: block;
+    background-image: url("../images/unity-category.png");
+    background-size: cover; 
+    background-position: center;
+    flex: 1;
+    border-radius: 3px;
+    align-content: end;
+    aspect-ratio: 5 / 6;
+    text-decoration: none;
+}
+
+#work-category-label
+{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 20%;
+    
+    text-align: left;
+    flex-direction: column;
+    text-wrap-mode: wrap;
+    border-end-end-radius: 3px;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+
+#unity-icon {
+    text-align: center;
+}
+
+#unity-icon img
+{
+    width: 40%;
+}
+
+#works h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+#works article{
+    background-color: none;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#works p{
+    text-align: left;
+}
+
+.tech-tags
+{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.tech-tags p{
+    display: block;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: var(--shadow-soft);
+    background: #fff;
+    padding: 0 5%;
+    height: 100%;
+    text-align: center;
+}
+
+/*==================[ TABLET ]==================*/
+@media (min-width: 768px){
+    .pages {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .mobile-menu{
+        display:none;
+    }
+
+    header{
+        height: 65px;
+    }
+
+    .desktop-menu{
+        display:flex;
+    }
+
+    h6{
+        font-size: 100px;
+    }
+
+    /*==================[ TABLET INDEX ]==================*/
+    #intro #name{
+        font-size: 45px;
+    }
+
+    #intro #desc{
+        font-size: 25px;
+    }
+
+    #personal-introduction{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*==================[ TABLET WORKS ]==================*/
+    #unity-icon 
+    {
+        margin-top: 20px;
+    }
+
+    #unity-icon img
+    {
+        width: 50%;
+    }
+
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    #works article{
+        margin: 5%;
+    }
+}
+
+
+
+/*==================[ DESKTOP ]==================*/
+@media (min-width: 1280px) {
+    .banners{
+        width: 1300px;
+        gap: 10%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .pages {
+        min-width: 700px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    footer {
+        height: 150px;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 3fr 3fr 2fr 2fr;
+    }
+
+    footer .promotions{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    footer .credit{
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+        font-size: 15px;
+    }
+
+    footer .location{
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+
+    h6{
+        font-size: 150px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+
+    /*==================[ DESKTOP INDEX ]==================*/
+    #intro #name{
+        font-size: 50px;
+    }
+
+    #intro #desc{
+        font-size: 30px;
+    }
+
+    #personal-introduction{
+        display: grid;
+        margin-top: 50px;
+        
+        grid-template-rows: 1fr 4fr;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    #personal-introduction h1{
+        padding-top: 10%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    #personal-introduction img{
+        margin-top: 20%;
+        width: 100%;
+        grid-row: 1 / 4;
+        grid-column: 2 / 3;
+    }
+
+    #personal-introduction p{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        padding-right: 30px;
+    }
+
+
+    /*==================[ DESKTOP ABOUT ME ]==================*/
+    #profilepic img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #core-values{
+        display:flex;
+        gap: 30px;
+    }
+
+    .core-value{
+        flex: 1;
+        max-width: 33%;
+        min-width: 250px;
+    }
+
+    #about-me p{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    #future-goals{
+        margin-bottom: 70px;
+    }
+
+    /*==================[ DESKTOP WORKS ]==================*/
+
+    #unity-icon 
+    {
+        margin-top: 20px;
+    }
+
+    #unity-icon img
+    {
+        width: 20%;
+    }
+
+    #work-categories
+    {
+        gap: 5%;
+        margin: 15%;
+        margin-top: 70px;
+        margin-bottom: 3%;
+    }
+
+    #work-categories .layout
+    {
+        border-radius: 10px;
+    }
+
+    #work-category-label
+    {
+        font-size: 50px;
+        border-end-end-radius: 10px;
+    }
+
+    
+
+    /*==================[ DESKTOP EDUCATION TIMELINE ]==================*/
+    .edu-card{
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .edu-card img{
+        width: 35%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .edu-card:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .edu-content{
+        flex: 1;
+        padding: 30px;
+    }
+
+    .edu-details{
+        gap: 40px;
+    }
+
+    .edu-details h5
+    {
+        font-size: 21px;
+        text-decoration: underline;
+        margin-bottom: 6px;
+    }
+
+    .edu-details ul{
+        font-size: 21px;
+        padding-left: 20px;
+    }
+
+
+    /*==================[ DESKTOP HOBBIES GRID ]==================*/
+    #hobbies-grid{
+        flex-direction: row;
+    }
+
+    .hobby-card{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobby-card img{
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .hobby-card p{
+        flex: 1;
+    }
+
+    #featured .video-wrapper iframe{
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    #featured{
+        height: fit-content;
+    }
+
+    #featured .video-wrapper{
+        aspect-ratio: 16 / 9;
+    }
+
+    /*==================[ DESKTOP CONTACT ]==================*/
+    #contact-info{
+        flex-direction: row;
+    }
+
+    .contact-card{
+        flex: 1;
+    }}
