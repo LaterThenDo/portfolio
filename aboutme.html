@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/components.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
@@ -9,46 +10,22 @@
 
 <body>
 
-<header>
-    <!-- Hamburger button to open menu for mobile -->
-    <details class="mobile-menu">
-        <summary>
-            <img src="images/menu-icon.png" alt="Menu" title="Menu" width=25>
-        </summary>
-
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="works.html">Works</a>
-            <a href="education.html">Education</a>
-            <a href="hobbies.html">Hobbies</a>
-        </nav> 
-    </details>
-
-    <!-- Deaktop menu -->
-    <nav class="desktop-menu">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="works.html">Works</a>
-        <a href="education.html">Education</a>
-        <a href="hobbies.html">Hobbies</a>
-    </nav>
-</header>
+<header></header>
 
 <main>
     <!-- Page label -->
     <div id="aboutme-label" class="page-label">
-        <h6>About Me</h6>
+        <h6>ABOUT ME</h6>
     </div>
     
     <div id="about-me" class="pages">
         <!-- Profile photo -->
-        <div id="profilepic">
+        <div id="profilepic" data-animate="fade">
             <img src="images/profilepic.png" alt="Menu" title="Menu">
         </div>
 
         <!-- Introduction -->
-        <div>
+        <div data-animate>
             <p>
                 Hi, I'm <strong>Nirob Miazee</strong>. I am currently studying a diploma in 
                 <strong>Game Development & Technology</strong> at <strong>Nanyang Polytechnic</strong>. 
@@ -66,18 +43,16 @@
 
             <p>
                 Outside of game development, I practice judo in school, while occasionally playing badminton. 
-                When I have free time, I like experiment with side projects in Roblox Studio, though I tend to move on quickly 
+                When I have free time, I like to experiment with side projects in Roblox Studio, though I tend to move on quickly 
                 once the initial excitement of making the game fades. I am always looking to sharpen my skills and push myself 
-                with new programming challenges. You can read more on my hobbies 
-                
-                <a href="hobbies.html">here.</a>
+                with new programming challenges.
             </p>
         </div>
     
         <!-- Core Values -->
-        <h2>Core Values</h2>
+        <h2 data-animate="fade">Core Values</h2>
         <div id="core-values">
-            <article class="core-value">
+            <article class="core-value" data-animate data-delay="1">
                 <h3>Accountability</h3>
                 <p>
                     I work best when there is a clear 
@@ -91,7 +66,7 @@
                 </p>
             </article>  
 
-            <article class="core-value">
+            <article class="core-value" data-animate data-delay="2">
                 <h3>Collaboration</h3>
                 <p>
                     I believe that a good team works best 
@@ -108,7 +83,7 @@
                 </p>
             </article>
 
-            <article class="core-value">
+            <article class="core-value" data-animate data-delay="3">
                 <h3>Experience</h3>
                 <p>
                     I care most about how a game feels, 
@@ -121,8 +96,149 @@
                 </p>
             </article>
         </div>
-    
-        <section id="future-goals">
+
+        <!-- ===================[ EDUCATION ]=================== -->
+        <h2 data-animate="fade">Education</h2>
+        <div id="education-timeline">
+            <article class="edu-card" data-animate data-delay="1">
+                <img src="images/mdf_champion.jpg" alt="Media and Design Festival 2018 Trophy" title="Media and Design Festival 2018 Trophy">
+                <div class="edu-content">
+                    <h3>Huamin Primary School <span class="edu-years">2014 – 2019</span></h3>
+                    <div class="edu-details">
+                        <div>
+                            <h5>CCA</h5>
+                            <ul>
+                                <li>Drama Club (P1)</li>
+                                <li>Infocomm Club (P2–P6)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Achievements</h5>
+                            <ul>
+                                <li>CCA Leader (2018 – 2019)</li>
+                                <li>AV Crew Leader (2018 – 2019)</li>
+                                <li>Media & Design Festival 2018 Champion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="edu-card" data-animate data-delay="2">
+                <img src="images/sec1.jpg" alt="Secondary 1 Group Photo" title="Secondary 1 Group Photo">
+                <div class="edu-content">
+                    <h3>Northbrooks Secondary School <span class="edu-years">2020 – 2023</span></h3>
+                    <div class="edu-details">
+                        <div>
+                            <h5>CCA</h5>
+                            <ul>
+                                <li>Badminton</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Achievements</h5>
+                            <ul>
+                                <li>Badminton B-Div Competitive Team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="edu-card" data-animate data-delay="3">
+                <img src="images/Judo_Medal.jpg" alt="Judo ITC Bronze Medal" title="Judo ITC Bronze Medal">
+                <div class="edu-content">
+                    <h3>Nanyang Polytechnic <span class="edu-years">2024 – 2027</span></h3>
+                    <div class="edu-details">
+                        <div>
+                            <h5>CCA</h5>
+                            <ul>
+                                <li>Judo Club</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Achievements</h5>
+                            <ul>
+                                <li>Judo ITC 2025 2nd Runner Up</li>
+                                <li>Class Leader (2025 – 2027)</li>
+                                <li>Judo CCA Executive Commitee (2025 - 2026)</li>
+                                <li>Judo CCA Vice President (2026 – 2027)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ===================[ HOBBIES ]=================== -->
+        <h2 data-animate="fade">Hobbies</h2>
+        <div id="hobbies-grid">
+            <article class="hobby-card" data-animate data-delay="1">
+                <img src="images/game_dev_hobby.png" alt="Roblox Game Development" title="Roblox Game Development">
+                <h3>Game Development</h3>
+                <p>
+                    I've been interested in game development 
+                    since I was about 9 years old, when I 
+                    came across Roblox Studio while playing 
+                    around on Roblox, which quickly turned 
+                    into a hobby that I've carried with me 
+                    for years. I enjoy experimenting with 
+                    game mechanics and seeing how small 
+                    changes affect how a game feels to play. 
+                    Programming is my favorite part of 
+                    development, especially when I can bring 
+                    systems and logic to life in a way that 
+                    players can interact with.
+                </p>
+            </article>
+
+            <article class="hobby-card" data-animate data-delay="2">
+                <img src="images/badminton_hobby.jpg" alt="Badminton B Division Competition in 2022" title="Badminton B Division Competition in 2022">
+                <h3>Badminton</h3>
+                <p>
+                    Badminton has been a big part of my 
+                    life since secondary school as it was my 
+                    CCA. I have always enjoyed the fast-paced 
+                    nature of the sport and the mix of 
+                    strategy and reflexes it requires. These 
+                    days, I still play whenever I get the 
+                    chance, mostly for fun or as a way to stay 
+                    active and unwind with friends.
+                </p>
+            </article>
+
+            <article class="hobby-card" data-animate data-delay="3">
+                <img src="images/judo_hobby.png" alt="Judo medalists group photo" title="Judo medalists group photo">
+                <h3>Judo</h3>
+                <p>
+                    I started practicing judo when I first 
+                    entered polytechnic and it quickly became 
+                    one of my favorite hobbies. Through regular 
+                    training, I've gained strength, confidence, 
+                    and a deeper appreciation for technique and 
+                    timing. Every session pushes me to improve, 
+                    and I've come to enjoy the sense of community 
+                    within the club as well.
+                </p>
+            </article>
+        </div>
+
+        <!-- Featured Hobby -->
+        <section id="featured" data-animate>
+            <h3>Featured Hobby: Judo</h3>
+            <p>
+                One of my most memorable experiences in Judo 
+                was competing in the Inter-Tertiary Competition 
+                back in March 2025.
+            </p>
+
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/la3UZ-qp8O0?si=_KQBPZ0tjehnT4ZQ" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- ===================[ FUTURE GOALS ]=================== -->
+        <section id="future-goals" data-animate>
             <h2>Future Goals</h2>
             <p>
                 I know that I want to keep 
@@ -156,41 +272,23 @@
 
     <!-- Banners at the end of the page -->
     <nav class="banners">
-        <a class="layout" href="index.html">
+        <a class="layout" href="index.html" data-animate data-delay="1">
             <img src="images/home_banner.png" alt="Home" title="Home">
         </a>
         
-        <a class="layout" href="education.html">
-            <img src="images/education_banner.png" alt="Education" title="Education">
+        <a class="layout" href="works.html" data-animate data-delay="2">
+            <img src="images/home_banner.png" alt="Works" title="Works">
         </a>
 
-        <a class="layout" href="hobbies.html">
-            <img src="images/hobbies_banner.jpg" alt="Hobbies" title="Hobbies">
+        <a class="layout" href="contact.html" data-animate data-delay="3">
+            <img src="images/home_banner.png" alt="Contact" title="Contact">
         </a>
     </nav>
 </main>
 
-<footer>
-    <div class="promotions">
-        <a href="https://www.instagram.com/nirobjarvis/" target="_blank">
-            <strong>INSTAGRAM  / </strong>
-        </a>
+<footer></footer>
 
-        <a href="https://www.linkedin.com/in/nirob-miazee-048749390/" target="_blank">
-            <strong>LINKEDIN</strong>
-        </a>
-    </div>
-
-    <!-- Copyright -->
-    <div class="credit">
-        Copyright &copy; 2026 Nirob Miazee
-    </div>
-
-    <!-- Location -->
-    <div class="location">
-        📍Singapore
-    </div>
-</footer>
-
+<script src="js/components.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

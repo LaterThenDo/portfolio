@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/components.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
@@ -9,128 +10,141 @@
 
 <body>
 
-<header>
-    <!-- Hamburger button to open menu for mobile -->
-    <details class="mobile-menu">
-        <summary>
-            <img src="images/hamburger-menu.png" alt="Menu" title="Menu" width=25>
-        </summary>
-
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="works.html">Works</a>
-            <a href="education.html">Education</a>
-            <a href="hobbies.html">Hobbies</a>
-        </nav> 
-    </details>
-
-    <!-- Deaktop menu -->
-    <nav class="desktop-menu">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="works.html">Works</a>
-        <a href="education.html">Education</a>
-        <a href="hobbies.html">Hobbies</a>
-    </nav>
-</header>
+<header></header>
 
 <main>
     <!-- Page label -->
     <div id="works-label" class="page-label">
-        <h6>Works</h6>
+        <h6>WORKS</h6>
     </div>
 
-    <div id="works" class="pages">
+    <section id="work-categories">
+        <a class="layout" href="#unity-projects" data-animate data-delay="1">
+            <div id="work-category-label">
+                <span class="label-text">Unity Projects</span>
+                <p class="label-desc">FPS, action, and gameplay systems built in Unity with C#.</p>
+            </div>
+        </a>
 
+       <a class="layout" href="#opengl-projects" data-animate data-delay="2">
+            <div id="work-category-label">
+                <span class="label-text">OpenGL Projects</span>
+                <p class="label-desc">Low-level rendering, physics, and simulation projects built with OpenGL.</p>
+            </div>
+        </a>
+
+        <a class="layout" href="#other-projects" data-animate data-delay="3">
+            <div id="work-category-label">
+                <span class="label-text">Other Projects</span>
+                <p class="label-desc">Smaller experiments, prototypes, and side projects across different tools.</p>
+            </div>
+        </a>
+    </section>
+
+    <div id="works" class="pages">
         <section id="unity-projects">
 
-            <div id="unity-icon">
+            <div id="unity-icon" data-animate="fade">
                 <img src="images/unity-icon.png" alt="Unity" title="Unity">
                 <h2>UNITY PROJECTS</h2>
             </div>
 
             <br>
             <br>
+
             <!-- SURGE -->
-            <article>
-                <h3>SURGE</h3>
-                <p>
-                    A first-person shooter game where the player shoots
-                    multiple targets to unlock the next room. Players
-                    can collect different guns, interact with the environment
-                    by shooting down explosive barrels, and even kick down
-                    locked doors!
-                </p>
+            <div class="projects">
+                <article data-animate>
+                    <h3>SURGE</h3>
 
-                <br>
-                
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/bezPk6hn8pg?si=vaIk2pg3hmV5sLWr"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </article>
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/bezPk6hn8pg?si=vaIk2pg3hmV5sLWr"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
 
-            <!-- KING OF THE HILL -->
+                    <div class="tech-tags">
+                        <p>Unity</p>
+                        <p>C#</p>
+                    </div>
 
-            <!-- LOST WATERS -->
+                    <p>
+                        A first-person shooter game where the player shoots
+                        multiple targets to unlock the next room. Players
+                        can collect different guns, interact with the environment
+                        by shooting down explosive barrels, and even kick down
+                        locked doors!
+                    </p>
+                </article>
 
-            <!-- THIRD-PERSON ACTION SYSTEM -->
+                <!-- KING OF THE HILL -->
 
-            <!-- TOP DOWN 2D HYPER-CASUAL DRIVING GAME -->
+                <!-- LOST WATERS -->
 
-            <!-- 2D ACTION PLATFORMER -->
+                <!-- THIRD-PERSON ACTION SYSTEM -->
 
-            <!-- PHYSICS BASED ATTACK ON TITAN GAME -->
-            <article>
-                <h3>Attack on Stickman</h3>
-                <p>
-                    A game heavily inspired by <strong>Stick of Titan</strong> 
-                    that is based on physics. The players have to eliminate the 
-                    shooting enemies with their ODM gear in order to win.
-                </p>
+                <!-- TOP DOWN 2D HYPER-CASUAL DRIVING GAME -->
 
-                <br>
-                
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/Mw6NgLfU5C8?si=VJAFU8eBByC0rG9p"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </article>
+                <!-- 2D ACTION PLATFORMER -->
 
-            <!-- DESERT TRUCK -->
-            <article>
-                <h3>desert truck</h3>
-                <p>
-                    A wave-based game where the player drives a truck with a turret, 
-                    fighting different, harder enemies every wave. 
-                </p>
+                <!-- PHYSICS BASED ATTACK ON TITAN GAME -->
+                <article data-animate>
+                    <h3>Attack on Stickman</h3>
 
-                <br>
-                
-                <div class="video-wrapper">
-                    <iframe
-                        src="https://www.youtube.com/embed/6XE_r_px2kI?si=HcgBWC5L6GA10IUB"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </article>
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/Mw6NgLfU5C8?si=VJAFU8eBByC0rG9p"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="tech-tags">
+                        <p>Unity</p>
+                        <p>C#</p>
+                    </div>
+
+                    <p>
+                        A game heavily inspired by <strong>Stick of Titan</strong> 
+                        that is based on physics. The players have to eliminate the 
+                        shooting enemies with their ODM gear in order to win.
+                    </p>
+                </article>
+
+                <!-- DESERT TRUCK -->
+                <article data-animate>
+                    <h3>desert truck</h3>
+
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/6XE_r_px2kI?si=HcgBWC5L6GA10IUB"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="tech-tags">
+                        <p>Unity</p>
+                        <p>C#</p>
+                    </div>
+
+                    <p>
+                        A wave-based game where the player drives a truck with a turret, 
+                        fighting different, harder enemies every wave. 
+                    </p>
+                </article>
+            </div>
         </section>
 
         <section id="opengl-projects">
@@ -148,44 +162,31 @@
 
             <!-- NPC AI SIMULATION -->
         </section>
+
+        <section id="other-projects">
+            <!-- Other / misc projects go here -->
+        </section>
     </div>
 
     <!-- Banners at the end of the page -->
     <nav class="banners">
-        <a class="layout" href="education.html">
-            <img src="images/education_banner.png" alt="Education" title="Education">
-        </a>
-        
-        <a class="layout" href="index.html">
+        <a class="layout" href="index.html" data-animate data-delay="1">
             <img src="images/home_banner.png" alt="Home" title="Home">
         </a>
-
-        <a class="layout" href="aboutme.html">
+        
+        <a class="layout" href="aboutme.html" data-animate data-delay="2">
             <img src="images/aboutme_banner.png" alt="About Me" title="About Me">
+        </a>
+
+        <a class="layout" href="contact.html" data-animate data-delay="3">
+            <div class="contact-banner">CONTACT</div>
         </a>
     </nav>
 </main>
 
-<footer>
-    <div class="promotions">
-        <a href="https://www.instagram.com/nirobjarvis/" target="_blank">
-            <strong>INSTAGRAM  / </strong>
-        </a>
+<footer></footer>
 
-        <a href="https://www.linkedin.com/in/nirob-miazee-048749390/" target="_blank">
-            <strong>LINKEDIN</strong>
-        </a>
-    </div>
-
-    <!-- Copyright -->
-    <div class="credit">
-        Copyright &copy; 2026 Nirob Miazee
-    </div>
-
-    <!-- Location -->
-    <div class="location">
-        📍Singapore
-    </div>
-</footer>
+<script src="js/components.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>
