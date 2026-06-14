@@ -509,6 +509,21 @@ p {
     text-decoration: none;
 }
 
+#work-categories .unity
+{
+    background-image: url("../images/unity-category.png");
+}
+
+#work-categories .opengl
+{
+    background-image: url("../images/opengl-category.png");
+}
+
+#work-categories .other
+{
+    background-image: url("../images/other-category.png");
+}
+
 #work-category-label
 {
     display: flex;
