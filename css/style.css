@@ -549,6 +549,17 @@ p {
     width: 40%;
 }
 
+#opengl-icon
+{
+    margin-top: 30%;
+    text-align: center;
+}
+
+#opengl-icon img
+{
+    width: 50%;
+}
+
 #works h2{
     text-align: center;
     font-size: xx-large;
@@ -632,7 +643,17 @@ p {
 
     #unity-icon img
     {
-        width: 50%;
+        width: 60%;
+    }
+
+    #opengl-icon
+    {
+        margin-top: 20%;
+    }
+
+    #opengl-icon img
+    {
+        width: 70%;
     }
 
     .projects{
@@ -763,15 +784,19 @@ p {
     }
 
     /*==================[ DESKTOP WORKS ]==================*/
-
-    #unity-icon 
-    {
-        margin-top: 20px;
-    }
-
     #unity-icon img
     {
         width: 20%;
+    }
+
+    #opengl-icon
+    {
+        margin-top: 10%;
+    }
+
+    #opengl-icon img
+    {
+        width: 30%;
     }
 
     #work-categories
