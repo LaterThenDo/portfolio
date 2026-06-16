@@ -596,6 +596,7 @@ p {
     gap: 10px;
     margin-top: 2%;
     margin-bottom: 5%;
+    text-wrap: nowrap;
 }
 
 .tech-tags p{
